@@ -1,0 +1,695 @@
+CRITICAL - 2025-05-15 03:29:34 --> ErrorException: Undefined variable $mascotaId
+[Method: GET, Route: relaciones/ver_amos_por_mascota]
+in APPPATH\Views\relaciones\ver_amos_por_mascota.php on line 24.
+ 1 APPPATH\Views\relaciones\ver_amos_por_mascota.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mascotaId', 'C:\\xampp\\htdocs\\CI4_mi_veterinaria\\app\\Views\\relaciones\\ver_amos_por_mascota.php', 24)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\CI4_mi_veterinaria\\app\\Views\\relaciones\\ver_amos_por_mascota.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('relaciones/ver_amos_por_mascota', [], true)
+ 5 APPPATH\Controllers\RelacionesController.php(197): view('relaciones/ver_amos_por_mascota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RelacionesController->verAmosPorMascota()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RelacionesController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-15 03:29:37 --> ErrorException: Undefined variable $mascotaId
+[Method: GET, Route: relaciones/ver_amos_por_mascota]
+in APPPATH\Views\relaciones\ver_amos_por_mascota.php on line 24.
+ 1 APPPATH\Views\relaciones\ver_amos_por_mascota.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mascotaId', 'C:\\xampp\\htdocs\\CI4_mi_veterinaria\\app\\Views\\relaciones\\ver_amos_por_mascota.php', 24)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\CI4_mi_veterinaria\\app\\Views\\relaciones\\ver_amos_por_mascota.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('relaciones/ver_amos_por_mascota', [], true)
+ 5 APPPATH\Controllers\RelacionesController.php(197): view('relaciones/ver_amos_por_mascota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RelacionesController->verAmosPorMascota()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RelacionesController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-15 03:29:39 --> ErrorException: Undefined variable $mascotaId
+[Method: GET, Route: relaciones/ver_amos_por_mascota]
+in APPPATH\Views\relaciones\ver_amos_por_mascota.php on line 24.
+ 1 APPPATH\Views\relaciones\ver_amos_por_mascota.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mascotaId', 'C:\\xampp\\htdocs\\CI4_mi_veterinaria\\app\\Views\\relaciones\\ver_amos_por_mascota.php', 24)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\CI4_mi_veterinaria\\app\\Views\\relaciones\\ver_amos_por_mascota.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('relaciones/ver_amos_por_mascota', [], true)
+ 5 APPPATH\Controllers\RelacionesController.php(197): view('relaciones/ver_amos_por_mascota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RelacionesController->verAmosPorMascota()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RelacionesController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-15 04:02:15 --> mysqli_sql_exception: Unknown column 'nombre' in 'field list' in C:\xampp\htdocs\CI4_mi_veterinaria\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\CI4_mi_veterinaria\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `ve...', 0)
+#1 C:\xampp\htdocs\CI4_mi_veterinaria\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ve...')
+#2 C:\xampp\htdocs\CI4_mi_veterinaria\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ve...')
+#3 C:\xampp\htdocs\CI4_mi_veterinaria\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ve...', Array, false)
+#4 C:\xampp\htdocs\CI4_mi_veterinaria\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CI4_mi_veterinaria\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CI4_mi_veterinaria\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\CI4_mi_veterinaria\system\BaseModel.php(750): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\CI4_mi_veterinaria\app\Controllers\VeterinarioController.php(25): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\CI4_mi_veterinaria\system\CodeIgniter.php(933): App\Controllers\VeterinarioController->guardar()
+#10 C:\xampp\htdocs\CI4_mi_veterinaria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VeterinarioController))
+#11 C:\xampp\htdocs\CI4_mi_veterinaria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\CI4_mi_veterinaria\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\CI4_mi_veterinaria\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\CI4_mi_veterinaria\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2025-05-15 04:02:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nombre' in 'field list'
+[Method: POST, Route: veterinarios/guardar]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `veterinarios` (`nombre`, `especialidad`, `matricula`) VALUES (:nombre:, :especialidad:, :matricula:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\VeterinarioController.php(25): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VeterinarioController->guardar()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VeterinarioController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-15 04:02:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `veterinarios` (`nombre`, `especialidad`, `matricula`) VALUES (\'Sabrina\', \'Clinica\', \'26726372\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `veterinarios` (`nombre`, `especialidad`, `matricula`) VALUES (\'Sabrina\', \'Clinica\', \'26726372\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `veterinarios` (`nombre`, `especialidad`, `matricula`) VALUES (:nombre:, :especialidad:, :matricula:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\VeterinarioController.php(25): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VeterinarioController->guardar()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VeterinarioController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-15 04:02:15 --> [Caused by] mysqli_sql_exception: Unknown column 'nombre' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `veterinarios` (`nombre`, `especialidad`, `matricula`) VALUES (\'Sabrina\', \'Clinica\', \'26726372\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `veterinarios` (`nombre`, `especialidad`, `matricula`) VALUES (\'Sabrina\', \'Clinica\', \'26726372\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `veterinarios` (`nombre`, `especialidad`, `matricula`) VALUES (\'Sabrina\', \'Clinica\', \'26726372\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `veterinarios` (`nombre`, `especialidad`, `matricula`) VALUES (:nombre:, :especialidad:, :matricula:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\VeterinarioController.php(25): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VeterinarioController->guardar()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VeterinarioController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-15 04:29:56 --> Error: Class "App\Models\VeterinarioMascotaModel" not found
+[Method: GET, Route: veterinarios/mascotas/1]
+in APPPATH\Controllers\VeterinarioController.php on line 100.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VeterinarioController->mascotas('1')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VeterinarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-15 12:18:55 --> ArgumentCountError: Too few arguments to function App\Controllers\VeterinarioController::baja(), 0 passed in C:\xampp\htdocs\CI4_mi_veterinaria\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: veterinarios/baja]
+in APPPATH\Controllers\VeterinarioController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VeterinarioController->baja()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VeterinarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-15 12:19:12 --> ArgumentCountError: Too few arguments to function App\Controllers\VeterinarioController::baja(), 0 passed in C:\xampp\htdocs\CI4_mi_veterinaria\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: veterinarios/baja]
+in APPPATH\Controllers\VeterinarioController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VeterinarioController->baja()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VeterinarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-15 12:19:29 --> ArgumentCountError: Too few arguments to function App\Controllers\VeterinarioController::baja(), 0 passed in C:\xampp\htdocs\CI4_mi_veterinaria\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: veterinarios/baja]
+in APPPATH\Controllers\VeterinarioController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VeterinarioController->baja()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VeterinarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-15 12:20:06 --> ArgumentCountError: Too few arguments to function App\Controllers\VeterinarioController::editar(), 0 passed in C:\xampp\htdocs\CI4_mi_veterinaria\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: veterinarios/editar]
+in APPPATH\Controllers\VeterinarioController.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VeterinarioController->editar()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VeterinarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-15 12:20:34 --> ArgumentCountError: Too few arguments to function App\Controllers\VeterinarioController::baja(), 0 passed in C:\xampp\htdocs\CI4_mi_veterinaria\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: veterinarios/baja]
+in APPPATH\Controllers\VeterinarioController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VeterinarioController->baja()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VeterinarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-15 12:25:54 --> ArgumentCountError: Too few arguments to function App\Controllers\VeterinarioController::baja(), 0 passed in C:\xampp\htdocs\CI4_mi_veterinaria\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: veterinarios/baja]
+in APPPATH\Controllers\VeterinarioController.php on line 58.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VeterinarioController->baja()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VeterinarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-15 13:01:56 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`miveterinaria`.`veterinario_mascota`, CONSTRAINT `veterinario_mascota_ibfk_1` FOREIGN KEY (`id_veterinario`) REFERENCES `veterinarios` (`id`)) in C:\xampp\htdocs\CI4_mi_veterinaria\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\CI4_mi_veterinaria\system\Database\MySQLi\Connection.php(327): mysqli->query('DELETE FROM `ve...', 0)
+#1 C:\xampp\htdocs\CI4_mi_veterinaria\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ve...')
+#2 C:\xampp\htdocs\CI4_mi_veterinaria\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ve...')
+#3 C:\xampp\htdocs\CI4_mi_veterinaria\system\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ve...', Array, false)
+#4 C:\xampp\htdocs\CI4_mi_veterinaria\system\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\CI4_mi_veterinaria\system\BaseModel.php(1157): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\CI4_mi_veterinaria\app\Controllers\VeterinarioController.php(62): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\CI4_mi_veterinaria\system\CodeIgniter.php(933): App\Controllers\VeterinarioController->baja('1')
+#8 C:\xampp\htdocs\CI4_mi_veterinaria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VeterinarioController))
+#9 C:\xampp\htdocs\CI4_mi_veterinaria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\CI4_mi_veterinaria\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\CI4_mi_veterinaria\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\CI4_mi_veterinaria\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-15 13:01:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`miveterinaria`.`veterinario_mascota`, CONSTRAINT `veterinario_mascota_ibfk_1` FOREIGN KEY (`id_veterinario`) REFERENCES `veterinarios` (`id`))
+[Method: GET, Route: veterinarios/baja/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `veterinarios`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1157): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\VeterinarioController.php(62): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VeterinarioController->baja('1')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VeterinarioController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-15 13:01:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`miveterinaria`.`veterinario_mascota`, CONSTRAINT `veterinario_mascota_ibfk_1` FOREIGN KEY (`id_veterinario`) REFERENCES `veterinarios` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `veterinarios`
+WHERE `id` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `veterinarios`
+WHERE `id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `veterinarios`
+WHERE `id` IN :id:', [...], false)
+ 4 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 5 SYSTEMPATH\BaseModel.php(1157): CodeIgniter\Model->doDelete([...], false)
+ 6 APPPATH\Controllers\VeterinarioController.php(62): CodeIgniter\BaseModel->delete([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VeterinarioController->baja('1')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VeterinarioController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-15 13:01:56 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`miveterinaria`.`veterinario_mascota`, CONSTRAINT `veterinario_mascota_ibfk_1` FOREIGN KEY (`id_veterinario`) REFERENCES `veterinarios` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('DELETE FROM `veterinarios`
+WHERE `id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `veterinarios`
+WHERE `id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `veterinarios`
+WHERE `id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `veterinarios`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1157): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\VeterinarioController.php(62): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VeterinarioController->baja('1')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VeterinarioController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-15 13:07:14 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`miveterinaria`.`veterinario_mascota`, CONSTRAINT `veterinario_mascota_ibfk_1` FOREIGN KEY (`id_veterinario`) REFERENCES `veterinarios` (`id`)) in C:\xampp\htdocs\CI4_mi_veterinaria\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\CI4_mi_veterinaria\system\Database\MySQLi\Connection.php(327): mysqli->query('DELETE FROM `ve...', 0)
+#1 C:\xampp\htdocs\CI4_mi_veterinaria\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ve...')
+#2 C:\xampp\htdocs\CI4_mi_veterinaria\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ve...')
+#3 C:\xampp\htdocs\CI4_mi_veterinaria\system\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ve...', Array, false)
+#4 C:\xampp\htdocs\CI4_mi_veterinaria\system\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\CI4_mi_veterinaria\system\BaseModel.php(1157): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\CI4_mi_veterinaria\app\Controllers\VeterinarioController.php(67): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\CI4_mi_veterinaria\system\CodeIgniter.php(933): App\Controllers\VeterinarioController->baja('1')
+#8 C:\xampp\htdocs\CI4_mi_veterinaria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VeterinarioController))
+#9 C:\xampp\htdocs\CI4_mi_veterinaria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\CI4_mi_veterinaria\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\CI4_mi_veterinaria\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\CI4_mi_veterinaria\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-15 13:07:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`miveterinaria`.`veterinario_mascota`, CONSTRAINT `veterinario_mascota_ibfk_1` FOREIGN KEY (`id_veterinario`) REFERENCES `veterinarios` (`id`))
+[Method: GET, Route: veterinarios/baja/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `veterinarios`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1157): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\VeterinarioController.php(67): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VeterinarioController->baja('1')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VeterinarioController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-15 13:07:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`miveterinaria`.`veterinario_mascota`, CONSTRAINT `veterinario_mascota_ibfk_1` FOREIGN KEY (`id_veterinario`) REFERENCES `veterinarios` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `veterinarios`
+WHERE `id` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `veterinarios`
+WHERE `id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `veterinarios`
+WHERE `id` IN :id:', [...], false)
+ 4 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 5 SYSTEMPATH\BaseModel.php(1157): CodeIgniter\Model->doDelete([...], false)
+ 6 APPPATH\Controllers\VeterinarioController.php(67): CodeIgniter\BaseModel->delete([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VeterinarioController->baja('1')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VeterinarioController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-15 13:07:14 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`miveterinaria`.`veterinario_mascota`, CONSTRAINT `veterinario_mascota_ibfk_1` FOREIGN KEY (`id_veterinario`) REFERENCES `veterinarios` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('DELETE FROM `veterinarios`
+WHERE `id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `veterinarios`
+WHERE `id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `veterinarios`
+WHERE `id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `veterinarios`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1157): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\VeterinarioController.php(67): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VeterinarioController->baja('1')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VeterinarioController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-15 13:39:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-15 13:50:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-15 13:50:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-15 14:52:43 --> ErrorException: Undefined variable $veterinarioMascotaModel
+[Method: POST, Route: veterinarios/procesar-reasignacion/7]
+in APPPATH\Controllers\VeterinarioController.php on line 162.
+ 1 APPPATH\Controllers\VeterinarioController.php(162): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $veterinarioMascotaModel', 'C:\\xampp\\htdocs\\CI4_mi_veterinaria\\app\\Controllers\\VeterinarioController.php', 162)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VeterinarioController->procesarReasignacion('7')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VeterinarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-15 14:55:33 --> ErrorException: Undefined variable $veterinarioMascotaModel
+[Method: POST, Route: veterinarios/procesar-reasignacion/7]
+in APPPATH\Controllers\VeterinarioController.php on line 162.
+ 1 APPPATH\Controllers\VeterinarioController.php(162): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $veterinarioMascotaModel', 'C:\\xampp\\htdocs\\CI4_mi_veterinaria\\app\\Controllers\\VeterinarioController.php', 162)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VeterinarioController->procesarReasignacion('7')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VeterinarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-15 14:57:12 --> ErrorException: Undefined variable $veterinarioMascotaModel
+[Method: POST, Route: veterinarios/procesar-reasignacion/7]
+in APPPATH\Controllers\VeterinarioController.php on line 162.
+ 1 APPPATH\Controllers\VeterinarioController.php(162): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $veterinarioMascotaModel', 'C:\\xampp\\htdocs\\CI4_mi_veterinaria\\app\\Controllers\\VeterinarioController.php', 162)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VeterinarioController->procesarReasignacion('7')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VeterinarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-15 14:59:24 --> mysqli_sql_exception: Unknown column 'id_veterinario' in 'where clause' in C:\xampp\htdocs\CI4_mi_veterinaria\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\CI4_mi_veterinaria\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\CI4_mi_veterinaria\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\CI4_mi_veterinaria\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\CI4_mi_veterinaria\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\CI4_mi_veterinaria\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\CI4_mi_veterinaria\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\CI4_mi_veterinaria\app\Controllers\VeterinarioController.php(162): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\CI4_mi_veterinaria\system\CodeIgniter.php(933): App\Controllers\VeterinarioController->procesarReasignacion('7')
+#8 C:\xampp\htdocs\CI4_mi_veterinaria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VeterinarioController))
+#9 C:\xampp\htdocs\CI4_mi_veterinaria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\CI4_mi_veterinaria\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\CI4_mi_veterinaria\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\CI4_mi_veterinaria\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-05-15 14:59:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id_veterinario' in 'where clause'
+[Method: POST, Route: veterinarios/procesar-reasignacion/7]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `veterinarios`
+WHERE `id_veterinario` = :id_veterinario:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\VeterinarioController.php(162): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VeterinarioController->procesarReasignacion('7')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VeterinarioController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-15 14:59:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id_veterinario' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `veterinarios`
+WHERE `id_veterinario` = \'7\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `veterinarios`
+WHERE `id_veterinario` = \'7\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `veterinarios`
+WHERE `id_veterinario` = :id_veterinario:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\VeterinarioController.php(162): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VeterinarioController->procesarReasignacion('7')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VeterinarioController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-15 14:59:24 --> [Caused by] mysqli_sql_exception: Unknown column 'id_veterinario' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `veterinarios`
+WHERE `id_veterinario` = \'7\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `veterinarios`
+WHERE `id_veterinario` = \'7\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `veterinarios`
+WHERE `id_veterinario` = \'7\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `veterinarios`
+WHERE `id_veterinario` = :id_veterinario:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\VeterinarioController.php(162): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VeterinarioController->procesarReasignacion('7')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VeterinarioController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-15 16:08:15 --> ErrorException: Undefined array key "id_mascota"
+[Method: GET, Route: veterinarios/mascotas/7]
+in APPPATH\Controllers\VeterinarioController.php on line 126.
+ 1 APPPATH\Controllers\VeterinarioController.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_mascota"', 'C:\\xampp\\htdocs\\CI4_mi_veterinaria\\app\\Controllers\\VeterinarioController.php', 126)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VeterinarioController->mascotas('7')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VeterinarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-15 16:08:33 --> ErrorException: Undefined array key "id_mascota"
+[Method: GET, Route: veterinarios/mascotas/2]
+in APPPATH\Controllers\VeterinarioController.php on line 126.
+ 1 APPPATH\Controllers\VeterinarioController.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_mascota"', 'C:\\xampp\\htdocs\\CI4_mi_veterinaria\\app\\Controllers\\VeterinarioController.php', 126)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VeterinarioController->mascotas('2')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VeterinarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-15 16:09:39 --> ErrorException: Undefined array key "id_mascota"
+[Method: GET, Route: veterinarios/mascotas/2]
+in APPPATH\Controllers\VeterinarioController.php on line 126.
+ 1 APPPATH\Controllers\VeterinarioController.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_mascota"', 'C:\\xampp\\htdocs\\CI4_mi_veterinaria\\app\\Controllers\\VeterinarioController.php', 126)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VeterinarioController->mascotas('2')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VeterinarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-15 18:59:44 --> ErrorException: Undefined array key "fecha_atencion"
+[Method: GET, Route: veterinarios/mascotas/7]
+in APPPATH\Views\veterinarios\mascotas.php on line 25.
+ 1 APPPATH\Views\veterinarios\mascotas.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fecha_atencion"', 'C:\\xampp\\htdocs\\CI4_mi_veterinaria\\app\\Views\\veterinarios\\mascotas.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\CI4_mi_veterinaria\\app\\Views\\veterinarios\\mascotas.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('veterinarios/mascotas', [], true)
+ 5 APPPATH\Controllers\VeterinarioController.php(136): view('veterinarios/mascotas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VeterinarioController->mascotas('7')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VeterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-15 19:02:05 --> ErrorException: Undefined array key "fecha_atencion"
+[Method: GET, Route: veterinarios/mascotas/2]
+in APPPATH\Views\veterinarios\mascotas.php on line 25.
+ 1 APPPATH\Views\veterinarios\mascotas.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fecha_atencion"', 'C:\\xampp\\htdocs\\CI4_mi_veterinaria\\app\\Views\\veterinarios\\mascotas.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\CI4_mi_veterinaria\\app\\Views\\veterinarios\\mascotas.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('veterinarios/mascotas', [], true)
+ 5 APPPATH\Controllers\VeterinarioController.php(136): view('veterinarios/mascotas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\VeterinarioController->mascotas('2')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\VeterinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-15 19:20:17 --> Error: Class "App\Controllers\VeterinarioModel" not found
+[Method: GET, Route: relaciones/registrar_visita]
+in APPPATH\Controllers\RelacionesController.php on line 206.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RelacionesController->registrar_visita()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RelacionesController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-15 19:27:51 --> Error: Class "App\Controllers\VeterinarioMascotaModel" not found
+[Method: POST, Route: relaciones/guardar_visita]
+in APPPATH\Controllers\RelacionesController.php on line 220.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RelacionesController->guardar_visita()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RelacionesController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-15 19:28:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-15 19:34:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-15 19:46:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-15 20:22:09 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "mascota-dueño.jpg"
+[Method: GET, Route: img/mascota-due%C3%B1o.jpg]
+in SYSTEMPATH\Router\Router.php on line 739.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('img/mascota-dueño.jpg')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('img/mascota-dueño.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-15 20:22:23 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "mascota-dueño.jpg"
+[Method: GET, Route: img/mascota-due%C3%B1o.jpg]
+in SYSTEMPATH\Router\Router.php on line 739.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('img/mascota-dueño.jpg')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('img/mascota-dueño.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-15 20:22:26 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "mascota-dueño.jpg"
+[Method: GET, Route: img/mascota-due%C3%B1o.jpg]
+in SYSTEMPATH\Router\Router.php on line 739.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('img/mascota-dueño.jpg')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('img/mascota-dueño.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-15 21:37:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-15 21:42:04 --> mysqli_sql_exception: Column 'dni' cannot be null in C:\xampp\htdocs\CI4_mi_veterinaria\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\CI4_mi_veterinaria\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `am...', 0)
+#1 C:\xampp\htdocs\CI4_mi_veterinaria\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `am...')
+#2 C:\xampp\htdocs\CI4_mi_veterinaria\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `am...')
+#3 C:\xampp\htdocs\CI4_mi_veterinaria\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `am...', Array, false)
+#4 C:\xampp\htdocs\CI4_mi_veterinaria\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\CI4_mi_veterinaria\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\CI4_mi_veterinaria\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\CI4_mi_veterinaria\app\Controllers\RelacionesController.php(24): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\CI4_mi_veterinaria\system\CodeIgniter.php(933): App\Controllers\RelacionesController->guardarAlta()
+#9 C:\xampp\htdocs\CI4_mi_veterinaria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RelacionesController))
+#10 C:\xampp\htdocs\CI4_mi_veterinaria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CI4_mi_veterinaria\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CI4_mi_veterinaria\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\CI4_mi_veterinaria\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-05-15 21:42:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'dni' cannot be null
+[Method: POST, Route: relaciones/guardar_alta]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `amos` (`nombre_apellido`, `dni`, `direccion`, `telefono`, `fecha_alta`) VALUES (:nombre_apellido:, :dni:, :direccion:, :telefono:, :fecha_alta:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\RelacionesController.php(24): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RelacionesController->guardarAlta()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RelacionesController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-15 21:42:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'dni' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `amos` (`nombre_apellido`, `dni`, `direccion`, `telefono`, `fecha_alta`) VALUES (\'367288282\', NULL, \'Flores 12\', \'2664238168\', \'2025-05-15\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `amos` (`nombre_apellido`, `dni`, `direccion`, `telefono`, `fecha_alta`) VALUES (\'367288282\', NULL, \'Flores 12\', \'2664238168\', \'2025-05-15\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `amos` (`nombre_apellido`, `dni`, `direccion`, `telefono`, `fecha_alta`) VALUES (:nombre_apellido:, :dni:, :direccion:, :telefono:, :fecha_alta:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\RelacionesController.php(24): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RelacionesController->guardarAlta()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RelacionesController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-15 21:42:04 --> [Caused by] mysqli_sql_exception: Column 'dni' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `amos` (`nombre_apellido`, `dni`, `direccion`, `telefono`, `fecha_alta`) VALUES (\'367288282\', NULL, \'Flores 12\', \'2664238168\', \'2025-05-15\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `amos` (`nombre_apellido`, `dni`, `direccion`, `telefono`, `fecha_alta`) VALUES (\'367288282\', NULL, \'Flores 12\', \'2664238168\', \'2025-05-15\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `amos` (`nombre_apellido`, `dni`, `direccion`, `telefono`, `fecha_alta`) VALUES (\'367288282\', NULL, \'Flores 12\', \'2664238168\', \'2025-05-15\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `amos` (`nombre_apellido`, `dni`, `direccion`, `telefono`, `fecha_alta`) VALUES (:nombre_apellido:, :dni:, :direccion:, :telefono:, :fecha_alta:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\RelacionesController.php(24): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RelacionesController->guardarAlta()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RelacionesController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-15 21:47:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-15 21:49:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-15 21:56:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-15 21:56:20 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: POST, Route: relaciones/procesarBaja/13]
+in SYSTEMPATH\BaseModel.php on line 1010.
+ 1 SYSTEMPATH\BaseModel.php(1010): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\RelacionesController.php(129): CodeIgniter\Model->update('4', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RelacionesController->procesarBaja('13')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RelacionesController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-15 22:02:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-15 22:04:12 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: POST, Route: relaciones/procesarBaja/12]
+in SYSTEMPATH\BaseModel.php on line 1010.
+ 1 SYSTEMPATH\BaseModel.php(1010): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\RelacionesController.php(129): CodeIgniter\Model->update('4', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RelacionesController->procesarBaja('12')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RelacionesController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-05-15 22:14:50 --> mysqli_sql_exception: Unknown column 'fecha_fallecimiento' in 'field list' in C:\xampp\htdocs\CI4_mi_veterinaria\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\CI4_mi_veterinaria\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `mascota...', 0)
+#1 C:\xampp\htdocs\CI4_mi_veterinaria\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `mascota...')
+#2 C:\xampp\htdocs\CI4_mi_veterinaria\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `mascota...')
+#3 C:\xampp\htdocs\CI4_mi_veterinaria\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `mascota...', Array, false)
+#4 C:\xampp\htdocs\CI4_mi_veterinaria\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\CI4_mi_veterinaria\system\BaseModel.php(1027): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\CI4_mi_veterinaria\system\Model.php(863): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\CI4_mi_veterinaria\app\Controllers\RelacionesController.php(129): CodeIgniter\Model->update('4', Array)
+#8 C:\xampp\htdocs\CI4_mi_veterinaria\system\CodeIgniter.php(933): App\Controllers\RelacionesController->procesarBaja('13')
+#9 C:\xampp\htdocs\CI4_mi_veterinaria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RelacionesController))
+#10 C:\xampp\htdocs\CI4_mi_veterinaria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\CI4_mi_veterinaria\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\CI4_mi_veterinaria\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\CI4_mi_veterinaria\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-05-15 22:14:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'fecha_fallecimiento' in 'field list'
+[Method: POST, Route: relaciones/procesarBaja/13]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `mascotas` SET `fecha_fallecimiento` = :fecha_fallecimiento:
+WHERE `mascotas`.`id` IN :mascotas.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\RelacionesController.php(129): CodeIgniter\Model->update('4', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RelacionesController->procesarBaja('13')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RelacionesController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-15 22:14:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'fecha_fallecimiento' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `mascotas` SET `fecha_fallecimiento` = \'2025-05-15\'
+WHERE `mascotas`.`id` IN (\'4\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `mascotas` SET `fecha_fallecimiento` = \'2025-05-15\'
+WHERE `mascotas`.`id` IN (\'4\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `mascotas` SET `fecha_fallecimiento` = :fecha_fallecimiento:
+WHERE `mascotas`.`id` IN :mascotas.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\RelacionesController.php(129): CodeIgniter\Model->update('4', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RelacionesController->procesarBaja('13')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RelacionesController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-15 22:14:50 --> [Caused by] mysqli_sql_exception: Unknown column 'fecha_fallecimiento' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `mascotas` SET `fecha_fallecimiento` = \'2025-05-15\'
+WHERE `mascotas`.`id` IN (\'4\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `mascotas` SET `fecha_fallecimiento` = \'2025-05-15\'
+WHERE `mascotas`.`id` IN (\'4\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `mascotas` SET `fecha_fallecimiento` = \'2025-05-15\'
+WHERE `mascotas`.`id` IN (\'4\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `mascotas` SET `fecha_fallecimiento` = :fecha_fallecimiento:
+WHERE `mascotas`.`id` IN :mascotas.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\RelacionesController.php(129): CodeIgniter\Model->update('4', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RelacionesController->procesarBaja('13')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RelacionesController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-15 22:15:51 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: POST, Route: relaciones/procesarBaja/13]
+in SYSTEMPATH\BaseModel.php on line 1010.
+ 1 SYSTEMPATH\BaseModel.php(1010): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\RelacionesController.php(129): CodeIgniter\Model->update('4', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RelacionesController->procesarBaja('13')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RelacionesController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-15 22:18:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-15 22:23:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-15 22:27:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

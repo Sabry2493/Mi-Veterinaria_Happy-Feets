@@ -1,0 +1,160 @@
+ERROR - 2025-05-14 14:04:35 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`miveterinaria`.`amo_mascota`, CONSTRAINT `amo_mascota_ibfk_2` FOREIGN KEY (`id_mascota`) REFERENCES `mascotas` (`id`)) in C:\xampp\htdocs\CI4_mi_veterinaria\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\CI4_mi_veterinaria\system\Database\MySQLi\Connection.php(327): mysqli->query('DELETE FROM `ma...', 0)
+#1 C:\xampp\htdocs\CI4_mi_veterinaria\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ma...')
+#2 C:\xampp\htdocs\CI4_mi_veterinaria\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ma...')
+#3 C:\xampp\htdocs\CI4_mi_veterinaria\system\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ma...', Array, false)
+#4 C:\xampp\htdocs\CI4_mi_veterinaria\system\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\xampp\htdocs\CI4_mi_veterinaria\system\BaseModel.php(1157): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\xampp\htdocs\CI4_mi_veterinaria\app\Controllers\MascotaController.php(66): CodeIgniter\BaseModel->delete(Array)
+#7 C:\xampp\htdocs\CI4_mi_veterinaria\system\CodeIgniter.php(933): App\Controllers\MascotaController->eliminar('1')
+#8 C:\xampp\htdocs\CI4_mi_veterinaria\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+#9 C:\xampp\htdocs\CI4_mi_veterinaria\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\CI4_mi_veterinaria\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\CI4_mi_veterinaria\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\CI4_mi_veterinaria\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\CI4_mi_veterinaria\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2025-05-14 14:04:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`miveterinaria`.`amo_mascota`, CONSTRAINT `amo_mascota_ibfk_2` FOREIGN KEY (`id_mascota`) REFERENCES `mascotas` (`id`))
+[Method: GET, Route: mascotas/eliminar/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `mascotas`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1157): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\MascotaController.php(66): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MascotaController->eliminar('1')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\CI4_mi_veterinaria\\public\\index.php')
+CRITICAL - 2025-05-14 14:04:35 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`miveterinaria`.`amo_mascota`, CONSTRAINT `amo_mascota_ibfk_2` FOREIGN KEY (`id_mascota`) REFERENCES `mascotas` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `mascotas`
+WHERE `id` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `mascotas`
+WHERE `id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `mascotas`
+WHERE `id` IN :id:', [...], false)
+ 4 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 5 SYSTEMPATH\BaseModel.php(1157): CodeIgniter\Model->doDelete([...], false)
+ 6 APPPATH\Controllers\MascotaController.php(66): CodeIgniter\BaseModel->delete([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MascotaController->eliminar('1')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\CI4_mi_veterinaria\\public\\index.php')
+CRITICAL - 2025-05-14 14:04:35 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`miveterinaria`.`amo_mascota`, CONSTRAINT `amo_mascota_ibfk_2` FOREIGN KEY (`id_mascota`) REFERENCES `mascotas` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('DELETE FROM `mascotas`
+WHERE `id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `mascotas`
+WHERE `id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `mascotas`
+WHERE `id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2848): CodeIgniter\Database\BaseConnection->query('DELETE FROM `mascotas`
+WHERE `id` IN :id:', [...], false)
+ 5 SYSTEMPATH\Model.php(521): CodeIgniter\Database\BaseBuilder->delete()
+ 6 SYSTEMPATH\BaseModel.php(1157): CodeIgniter\Model->doDelete([...], false)
+ 7 APPPATH\Controllers\MascotaController.php(66): CodeIgniter\BaseModel->delete([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MascotaController->eliminar('1')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MascotaController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\CI4_mi_veterinaria\\public\\index.php')
+CRITICAL - 2025-05-14 15:10:12 --> Error: Class "App\Models\AmoModel" not found
+[Method: GET, Route: relaciones/alta]
+in APPPATH\Controllers\RelacionesController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RelacionesController->alta()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RelacionesController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 15:48:37 --> Error: Class "App\Models\AmoModel" not found
+[Method: GET, Route: relaciones/alta]
+in APPPATH\Controllers\RelacionesController.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RelacionesController->alta()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RelacionesController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-05-14 17:08:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 17:45:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 17:45:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 17:48:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 19:55:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 19:59:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 20:03:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-05-14 21:00:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-14 22:33:51 --> ErrorException: Undefined array key "motivo_baja"
+[Method: GET, Route: relaciones/ver_mascotas_por_amo]
+in APPPATH\Controllers\RelacionesController.php on line 153.
+ 1 APPPATH\Controllers\RelacionesController.php(153): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "motivo_baja"', 'C:\\xampp\\htdocs\\CI4_mi_veterinaria\\app\\Controllers\\RelacionesController.php', 153)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RelacionesController->verMascotasPorAmo()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RelacionesController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 22:33:57 --> ErrorException: Undefined array key "motivo_baja"
+[Method: GET, Route: relaciones/ver_mascotas_por_amo]
+in APPPATH\Controllers\RelacionesController.php on line 153.
+ 1 APPPATH\Controllers\RelacionesController.php(153): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "motivo_baja"', 'C:\\xampp\\htdocs\\CI4_mi_veterinaria\\app\\Controllers\\RelacionesController.php', 153)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RelacionesController->verMascotasPorAmo()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RelacionesController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 22:34:14 --> ErrorException: Undefined array key "motivo_baja"
+[Method: GET, Route: relaciones/ver_mascotas_por_amo]
+in APPPATH\Controllers\RelacionesController.php on line 153.
+ 1 APPPATH\Controllers\RelacionesController.php(153): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "motivo_baja"', 'C:\\xampp\\htdocs\\CI4_mi_veterinaria\\app\\Controllers\\RelacionesController.php', 153)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RelacionesController->verMascotasPorAmo()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RelacionesController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 22:38:21 --> ErrorException: Undefined array key "motivo_baja"
+[Method: GET, Route: relaciones/ver_mascotas_por_amo]
+in APPPATH\Controllers\RelacionesController.php on line 153.
+ 1 APPPATH\Controllers\RelacionesController.php(153): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "motivo_baja"', 'C:\\xampp\\htdocs\\CI4_mi_veterinaria\\app\\Controllers\\RelacionesController.php', 153)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RelacionesController->verMascotasPorAmo()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RelacionesController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 22:45:03 --> ErrorException: Undefined array key "motivo_baja"
+[Method: GET, Route: relaciones/ver_amos_por_mascota]
+in APPPATH\Controllers\RelacionesController.php on line 188.
+ 1 APPPATH\Controllers\RelacionesController.php(188): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "motivo_baja"', 'C:\\xampp\\htdocs\\CI4_mi_veterinaria\\app\\Controllers\\RelacionesController.php', 188)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RelacionesController->verAmosPorMascota()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RelacionesController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-14 22:45:41 --> ErrorException: Undefined array key "dni"
+[Method: GET, Route: relaciones/ver_amos_por_mascota]
+in APPPATH\Views\relaciones\ver_amos_por_mascota.php on line 33.
+ 1 APPPATH\Views\relaciones\ver_amos_por_mascota.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "dni"', 'C:\\xampp\\htdocs\\CI4_mi_veterinaria\\app\\Views\\relaciones\\ver_amos_por_mascota.php', 33)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\CI4_mi_veterinaria\\app\\Views\\relaciones\\ver_amos_por_mascota.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('relaciones/ver_amos_por_mascota', [], true)
+ 5 APPPATH\Controllers\RelacionesController.php(194): view('relaciones/ver_amos_por_mascota', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\RelacionesController->verAmosPorMascota()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RelacionesController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
