@@ -7,6 +7,10 @@ use CodeIgniter\Router\RouteCollection;
  */
 
 $routes->get('/', 'Home::index');// muestra el menú principal
+//login
+$routes->get('login', 'LoginController::login');
+$routes->post('autenticar', 'LoginController::autenticar');
+$routes->get('logout', 'LoginController::logout');
 
 // CRUD (crear, leer, actualizar y eliminar)básico para Mascotas
 $routes->get('mascotas/mostrar', 'MascotaController::index/mostrar');
