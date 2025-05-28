@@ -1,9 +1,13 @@
 <?= view('partials/header') ?>
-<div class="container mt-4 " style="background-color: rgb(54, 99, 70);width:1050px;height: 465px;box-shadow: -1px 4px 8px 8px rgba(59, 112, 52, 0.53);">
-    <div class="d-flex justify-content-center">
-        <img src="<?= base_url('img/fondos/fondo.png') ?>" alt="logo" style="width:560px;height: 455px;">
+<!--  cambio 3:definir ancho  -->
+    <div class="container mt-4" style="background-color: rgb(54, 99, 70); width: 90%; max-width: 1050px; height: auto; box-shadow: -1px 4px 8px 8px rgba(59, 112, 52, 0.53);">
+        <div class="d-flex justify-content-center">
+            <img src="<?= base_url('img/fondos/fondo.png') ?>" alt="logo" class="img-fluid" style="max-height: 455px;width: 650px;">
+        </div>
     </div>
-</div>
+
+<!--si no esta logueado no muestra lo que esta debtro de este bloque-->
+<?php if (session()->has('usuario_id')): ?>
 
 <div class="container mt-4 letragral">
     <div class="container mt-3 d-flex justify-content-center">
@@ -74,4 +78,5 @@
         </div>
     </div>
 </div>
+<?php endif; ?>
 <?= view('partials/footer') ?>
