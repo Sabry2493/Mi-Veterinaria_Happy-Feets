@@ -1,9 +1,10 @@
 
- 
+</div> <!--fin del contenedor nuevo-->
 <!-- <footer style="background: linear-gradient(to right, rgba(243, 97, 30, 0.94), rgba(243, 144, 30, 0.94));margin-top:20px;"> -->
 <footer style="background: linear-gradient(to bottom, rgba(59, 104, 53, 0.94), rgba(202, 193, 193, 0.94));box-shadow: 0 4px 10px rgba(0,0,0,0.2); margin-top:20px;">
     <div class="container mt-1 mb-2 pt-3 " style="text-align: center;">
         <img src="<?= base_url('img/footer/footer1.png') ?>" alt="Logo" style="width: 150px;" >
+     <p style="font-family: Lilita One, sans-serif;"> &copy; <?= date('Y') ?> Mi Veterinaria. Todos los derechos reservados.</p>
     </div>
     <div class="container mt-1 pb-3" style="text-align: center;">
         <img src="<?= base_url('img/footer/facebook.png') ?>" alt="facebook" style="width: 40px;margin-right:50px;">
