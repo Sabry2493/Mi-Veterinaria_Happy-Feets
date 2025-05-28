@@ -11,11 +11,21 @@
     
     body {
         margin:0;
-        padding:0;        
+        padding:0;    
+        min-height: 100vh;
         background:linear-gradient(rgba(179, 35, 24, 0.94), rgba(46, 109, 44, 0.94),rgba(126, 126, 123, 0.94)); 
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+    }
+
+    .main-wrapper {
+    min-height: 100vh;
+    /*Ocupa al menos el 100% de la altura de la pantalla */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     }
     
     .lista-mascotasfondo {
@@ -129,21 +139,17 @@
     .tablaencabezado{
          
     }
-    .navbar-brand span {
-            /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-            font-family: "Luckiest Guy", cursive;
-            font-family: "Lilita One", sans-serif;
+    #titulo{
+            
             font-family: "Festive", cursive;
             font-weight: 400;
             font-size: 2.8rem;
             color: rgb(248, 250, 246);
+            margin-left:-70px;
         }
 
     .navbar {
             
-            background: linear-gradient(to right, rgba(207, 193, 67, 0.94), rgba(233, 154, 64, 0.92));
-            background: linear-gradient(to right, rgb(148, 69, 65),rgb(231, 188, 181));
-            background: linear-gradient(to right, rgb(187, 32, 24),rgb(238, 99, 77));
             background: linear-gradient(to top, rgb(131, 32, 26),rgb(231, 124, 108));
             background-image: url('<?= base_url('img/fondos/fondohuellasnav.png') ?>');
             box-shadow: 0 4px 10px rgba(0,0,0,0.2);
@@ -158,9 +164,11 @@
 
     .nav-link {
             font-family: "Lilita One", sans-serif;
-            color: rgb(248, 250, 246); !important;
+            color: rgb(241, 178, 174) !important;
             font-weight: 250;
             font-size: 1.2rem;
+            margin-right: -50px;
+            box-shadow: 0 0px 15px rgba(97, 32, 32, 0.8);
         }
 
     .nav-link:hover {
@@ -172,39 +180,42 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg"  >
-        <!-- Logo -->
-        <div class="container" style="margin-left:40px;">   
-            <a class="navbar-brand d-flex align-items-center" href="<?= base_url('/') ?>">
-                <img src="<?= base_url('img/fondos/logo2.png') ?>" alt="Logo" style="width: 85px; heigth:80px;" >
-            </a>      
-        </div>
-        <!-- Nombre -->
-        <div class="navbar-brand d-flex align-items-center">
-                <span >Bienvenidos</span>
-        </div>
+       <div class="container d-flex justify-content-between align-items-center " >   
+            
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="<?= base_url('/') ?>">
+                    <img src="<?= base_url('img/fondos/home.png') ?>" alt="Logo" style="width: 115px;" >
+                </a>        
+                     
+        
+            <!-- Bienvenida centrada -->
+            <div class="text-center flex-grow-1">
+                    <span id="titulo">Bienvenidos</span>
+            </div>
     
         <!-- Login que se implementara luego -->
-        <div class="container" style="padding-right:40px;padding-left:40px;">
-            <!-- Botón colapsable -->
-            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarVet" >
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="d-flex align-items-center">
+                <!-- Botón colapsable -->
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarVet" >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <!-- Enlaces -->
-            <div class="collapse navbar-collapse justify-content-end" id="navbarVet">
-                <ul class="navbar-nav">
-                    <?php if (session()->has('usuario_id')): ?>
-                        <li class="nav-item">
-                            <a class="nav-link" href="<?= base_url('logout') ?>">Logout</a>
-                        </li>
-                    <?php else: ?>
-                        <li class="nav-item">
-                            <!-- <a class="nav-link" href="<?= base_url('login') ?>">Login</a> -->
-                            <a class="nav-link" href="#tarjetas">Login</a>
-                        </li>
-                    <?php endif; ?>
-                </ul>
+                <!-- Enlaces -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarVet">
+                    <ul class="navbar-nav">
+                        <?php if (session()->has('usuario_id')): ?>
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?= base_url('logout') ?>">Logout</a>
+                            </li>
+                        <?php else: ?>
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?= base_url('login') ?>">Login</a>
+                                <!-- <a class="nav-link" href="#tarjetas">Login</a> -->
+                            </li>
+                        <?php endif; ?>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
-
+<div class="main-wrapper flex-fill"><!--  cambio 2:Nuevo contenedor -->
